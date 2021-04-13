@@ -5,7 +5,6 @@ import Content from './components/Content'
 
 function App() {
   return (
-    <div className="App">
       <Router>
         <Switch>
           <Route path="/directory">
@@ -23,7 +22,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
   );
 }
 
