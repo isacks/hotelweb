@@ -19,6 +19,9 @@ import islagrande from '../assets/img/islagrande.jpg'
 import bocas from '../assets/img/bocas.jpg'
 import gunayala from '../assets/img/gunayala.jpg'
 import Beach from './Beach'
+import logo from '../assets/img/princesshotellogo.png'
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import MailIcon from '@material-ui/icons/Mail';
 
 function Content() {
     const tvChannels = [
@@ -63,7 +66,7 @@ function Content() {
         {
             img: tinajas,
             name: 'Tinajas Restaurant',
-            description: '',
+            description: 'Traditional food',
             location: 'Located at 51 St. East.',
             phone: '+507 263-7890',
             socials: '@restaurante_tinajas'
@@ -71,7 +74,7 @@ function Content() {
         {
             img: lafonda,
             name: 'La Fonda',
-            description: '',
+            description: 'Traditional food',
             location: 'Located in Marbella, Anastacio Ruiz Noriega St.',
             phone: '+507 385-7220',
             socials: '@lafondapanama'
@@ -135,25 +138,25 @@ function Content() {
             email: 'reservas@yandupisland.com',
         },
     ]
+
     return (
-        <Container>
+        <Container className="container">
             <Header />
-            <Location>
+            <Location className="vh-100 d-flex flex-column justify-content-center">
                 <Title className="display-4 text-center my-3">Location</Title>
                 <div>
                     Princess Hotel Panamá
                     It's located in the city center, 30 minutes from Tocumen International Airport, near banks, restaurants and malls. Our check in is at 3:00 p.m. and our check out is at 12:00 p.m.
                 </div>
             </Location>
-            <Services>
+            <Services className="">
                 <Title className="display-4 text-center my-3">Services</Title>
                 <div>
-                    <p>Begin your day with a delicious breakfast served at our Saloma Restaurant located in PB level, from 6:00 a.m. to 9:00 p.m.</p>
+                    <p>Begin your day with a delicious breakfast served at our Saloma Restaurant located in PB level, from 6:00 a.m. to 10:00 a.m.</p>
 
                     <p>We are at your service in Front Desk 24/7 dialing 1, for any request.</p>
                     <p>
                         <div className="h2">Always connected</div>
-                        Mini Bar
                         Free wifi at the hotel.<br />
                         User: Princess Hotel <br />
                         Password: PrincessHotelpm@
@@ -172,7 +175,6 @@ function Content() {
                     </p>
                     <p>
                         <div className="h2">Channel Listing</div>
-                        Late Check Out
                         For your entertainment we suggest these channels: <br />
                     </p>
                     <table className="table table-striped">
@@ -200,13 +202,30 @@ function Content() {
             <HotelRules>
                 <Title className="display-4 text-center my-3">Preventive Rules for entering our facilities</Title>
                 <div>
+                    <ol>
+                        <li>Face mask required.</li>
+                        <li>We will be checking that your body temperature is less than 38°.</li>
+                        <li>Use antibacterial gel for proper han desinfection.</li>
+                        <li>During your visit, please keep a minimium distance of 2 meters between other guest or employees.</li>
+                    </ol>
+                    <div className="h4">In case of Fire / Evacuation</div>
+                    <ol>
+                        <li>Please inform to the hotel operador the emergency situation as quickly as posible.</li>
+                        <li>Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the door of your room.</li>
+                        <li>Leave your room as indicated in the evacuation intructions.</li>
+                        <li>Keep calm, do not scream or run.</li>
+                        <li>Do not use the elevators.</li>
+                        <li>Return to youn room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</li>
+                    </ol>
+                </div>
+                <div>
                     <div className="h4">Rooms Cleaning</div>
-                    <p>For your biosecurity and of our cleaning staff, your room will be cleaned and change the bed linens every 3 days.</p>
-                    <p>If you need to change the bed linen or other object, please ask at front desk and we will deliver your request.</p>
+                    <div>For your biosecurity and of our cleaning staff, your room will be cleaned and change the bed linens every 3 days.</div>
+                    <div>If you need to change the bed linen or other object, please ask at front desk and we will deliver your request.</div>
                 </div>
             </HotelRules>
             <Discover>
-                <Title className="display-4 text-center my-3">Discover Panamá</Title>
+                <Title className="display-4 text-center my-3">Discover Panama</Title>
                 <div>
                     <div className="h4">Panama Canal</div>
                     <img src={canal} className="img-fluid" />
@@ -288,8 +307,6 @@ function Content() {
                         www.hotelpresidente.com
                         +507 848-3071
                     </p>
-
-                    
                 </div>
             </Adventure>
             <SunBeach>
@@ -306,13 +323,13 @@ function Content() {
             <Gastronomy>
                 <Title className="display-4 text-center">And now a taste of our varied gastronomy</Title>
                 <p>In Panamá you could taste a varied gastronomy, from International plates to our traditional dishes as sancocho, arroz con pollo, tamales, saus among others.</p>
-                <div className="display-6 py-3">Traditional Style Food Restaurants</div>
+                <Title className="display-5 py-3">Traditional Style Food Restaurants</Title>
                 {
                     nationalRestaurants.map((restaurant) => (
                         <Restaurant data={restaurant} />
                     ))
                 }
-                <div className="display-6 py-3">International Food Restaurants</div>
+                <Title className="display-5 py-3">International Food Restaurants</Title>
 
                 {
                     internationalRestaurants.map((restaurant) => (
@@ -320,6 +337,22 @@ function Content() {
                     ))
                 }
             </Gastronomy>
+            <Footer className="row">
+                <figure className="col-sm-4 mt-3">
+                    <img src={logo} alt="..." className="img-fluid"/>
+                </figure>
+                <div className="col-sm-4 d-flex justify-content-center flex-column align-items-center mb-4">
+                    <LocationOnIcon className="mb-2 fs-1" style={{color: "#cd8825"}}/>
+                    <div className="display-6 mb-3">Address</div>
+                    <div className="">Marbella, Calle 53 Este con Ave. 5ta. B Sur, Plaza World Trade Center</div>  
+                </div>
+                <div className="col-sm-4 d-flex justify-content-center flex-column align-items-center mb-4">
+                    <MailIcon className="mb-2 fs-1" style={{color: "#cd8825"}}/>
+                    <div className="display-6 mb-3">Contact</div>
+                    <div className="">Phone: +507 309-6901</div>
+                    <div className="">Email: reservas@princesshotelpanama.com</div>
+                </div>
+            </Footer>
         </Container>
     )
 }
@@ -354,4 +387,12 @@ const Gastronomy = styled.div`
 
 const Title = styled.div`
     color: #cd8825;
+`;
+const Footer = styled.div`
+    background: #2c353d;
+    color: white;
+    padding: 10px;
+    img{
+        width: 50%;
+    }
 `;

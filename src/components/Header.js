@@ -4,9 +4,11 @@ import logo from '../assets/img/princesshotel.png';
 
 function Header() {
     return (
-        <Container className="col-sm-12 d-flex flex-column align-items-center">
-            <img src={logo} alt="" className="mt-3"/>
-            <Title className="display-3 text-center my-4">Princess Hotel Directory</Title>
+        <Container className="d-flex flex-column justify-content-center align-items-center vh-100">
+            <div className="col-sm-6">
+                <img src={logo} alt="" className="mt-3 figure-img img-fluid"/>
+            </div>
+            <Title className="display-3 text-center">Princess Hotel Directory</Title>
         </Container>
     )
 }
@@ -17,7 +19,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     img{
-        width: 25%;
+        width: 50%;
     }
 `;
 
