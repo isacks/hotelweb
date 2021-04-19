@@ -26,6 +26,18 @@ import temperature from '../assets/img/covid/termometro.png';
 import mask from '../assets/img/covid/mask.png';
 import antibacterial from '../assets/img/covid/desinfectante.png';
 import distance from '../assets/img/covid/distancia.png';
+import alert from '../assets/img/emerg/advertencia.png';
+import exit from '../assets/img/emerg/exit.png';
+import emergency from '../assets/img/emerg/emergency.png';
+import scream from '../assets/img/emerg/scream.png';
+import elevator from '../assets/img/emerg/elevator.png';
+import back from '../assets/img/emerg/back.png';
+import PoolIcon from '@material-ui/icons/Pool';
+import LocalBarIcon from '@material-ui/icons/LocalBar';
+import WifiIcon from '@material-ui/icons/Wifi';
+import LibraryAddCheckIcon from '@material-ui/icons/LibraryAddCheck';
+import LiveTvIcon from '@material-ui/icons/LiveTv';
+import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 function Content() {
     const tvChannels = [
@@ -146,38 +158,43 @@ function Content() {
     return (
         <Container className="container">
             <Header />
-            <Location className="vh-100 d-flex flex-column justify-content-center">
+            <Location className="d-flex flex-column justify-content-center">
                 <Title className="display-4 text-center my-3">Location</Title>
                 <div>
                     Princess Hotel Panamá
                     It's located in the city center, 30 minutes from Tocumen International Airport, near banks, restaurants and malls. Our check in is at 3:00 p.m. and our check out is at 12:00 p.m.
                 </div>
             </Location>
-            <Services className="">
+            <Services>
                 <Title className="display-4 text-center my-3">Services</Title>
                 <div>
                     <p>Begin your day with a delicious breakfast served at our Saloma Restaurant located in PB level, from 6:00 a.m. to 10:00 a.m.</p>
 
                     <p>We are at your service in Front Desk 24/7 dialing 1, for any request.</p>
                     <p>
+                        <WifiIcon style={{fontSize: 80, color: "#cd8825"}}/>
                         <div className="h2">Always connected</div>
                         Free wifi at the hotel.<br />
                         User: Princess Hotel <br />
                         Password: PrincessHotelpm@
                     </p>
                     <p>
+                        <LocalBarIcon style={{fontSize: 80, color: "#cd8825"}}/>
                         <div className="h2">Mini Bar</div>
                         Ask for menu and prices.
                     </p>
                     <p>
+                        <PoolIcon style={{fontSize: 80, color: "#cd8825"}}/>
                         <div className="h2">Pool</div>
                         Relax in our cozy outdoor pool located at CL level from 9:00 a.m. to 9:00 p.m.
                     </p>
                     <p>
+                        <LibraryAddCheckIcon style={{fontSize: 80, color: "#cd8825"}}/>
                         <div className="h2">Late Check Out</div>
                         Enjoy spending more time of your stay, in the city or with us, ask for a late check out until 2:00 p.m. for 16.50 USD or until 4:00 p.m. for 27.50 USD.
                     </p>
                     <p>
+                        <LiveTvIcon style={{fontSize: 80, color: "#cd8825"}}/>
                         <div className="h2">Channel Listing</div>
                         For your entertainment we suggest these channels: <br />
                     </p>
@@ -201,47 +218,66 @@ function Content() {
                             }
                         </tbody>
                     </table>
+                    <div>
+                    <CheckCircleOutlineIcon style={{fontSize: 80, color: "#cd8825"}}/>
+                    <div className="h4">Rooms Cleaning</div>
+                        <div>For your biosecurity and of our cleaning staff, your room will be cleaned and change the bed linens every 3 days.</div>
+                        <div>If you need to change the bed linen or other object, please ask at front desk and we will deliver your request.</div>
+                    </div>
                 </div>
             </Services>
             <HotelRules>
-                <Title className="display-3 text-center my-5">Preventive Rules for entering our facilities</Title>
+                <Title className="display-3 text-center my-5 fw-bold">Preventive Rules for entering our facilities</Title>
                 <div>
                     <div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-4"><img src={mask} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-6 display-4">Face mask required.</div>
+                            <div className="col-sm-2"><img src={mask} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-5">Face mask required.</div>
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-4"><img src={temperature} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-6 display-4">We will be checking that your body temperature is less than 38°.</div>
+                            <div className="col-sm-2"><img src={temperature} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-5">We will be checking that your body temperature is less than 38°.</div>
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-4"><img src={antibacterial} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-6 display-4">Use antibacterial gel for proper han desinfection.</div>
+                            <div className="col-sm-2"><img src={antibacterial} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-5">Use antibacterial gel for proper han desinfection.</div>
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-4"><img src={distance} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-6 display-4">During your visit, please keep a minimium distance of 2 meters between other guest or employees.</div>
+                            <div className="col-sm-2"><img src={distance} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-5">During your visit, please keep a minimium distance of 2 meters between other guest or employees.</div>
                         </div>
                     </div>
-                    <div className="h4">In case of Fire / Evacuation</div>
-                    <ol>
-                        <li>Please inform to the hotel operador the emergency situation as quickly as posible.</li>
-                        <li>Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the door of your room.</li>
-                        <li>Leave your room as indicated in the evacuation intructions.</li>
-                        <li>Keep calm, do not scream or run.</li>
-                        <li>Do not use the elevators.</li>
-                        <li>Return to youn room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</li>
-                    </ol>
-                </div>
-                <div>
-                    <div className="h4">Rooms Cleaning</div>
-                    <div>For your biosecurity and of our cleaning staff, your room will be cleaned and change the bed linens every 3 days.</div>
-                    <div>If you need to change the bed linen or other object, please ask at front desk and we will deliver your request.</div>
+                    <div className="display-3 my-5 text-warning fw-bolder">In case of Fire / Evacuation</div>
+                    <div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={alert} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-4">Please inform to the hotel operador the emergency situation as quickly as posible.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={exit} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-4">Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the door of your room.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={emergency} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-4">Leave your room as indicated in the evacuation instructions.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={scream} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-4">Keep calm, do not scream or run.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={elevator} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-4">Do not use the elevators.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-2"><img src={back} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-10 display-5">Return to youn room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</div>
+                        </div>
+                    </div>
                 </div>
             </HotelRules>
             <Discover>
-                <Title className="display-4 text-center my-3">Discover Panama</Title>
+                <Title className="display-2 text-center my-3">Discover Panama</Title>
                 <div>
                     <div className="h4">Panama Canal</div>
                     <img src={canal} className="img-fluid" />
@@ -281,7 +317,7 @@ function Content() {
                 </div>
             </Discover>
             <Adventure>
-                <Title className="display-4 text-center my-3">Adventure Spirit?</Title>
+                <Title className="display-2 text-center my-3">Adventure Spirit?</Title>
                 <p>Get to know the flora and fauna of our country, visiting these places:</p>
                 <div>
                     <div className="h4">Summit Municipal Park</div>
@@ -326,7 +362,7 @@ function Content() {
                 </div>
             </Adventure>
             <SunBeach>
-                <Title className="display-4 text-center">
+                <Title className="display-2 text-center">
                     Did somebody said sun, beach and sand?
                 </Title>
                 <p>Bathed for 2 oceans, Panamá offers countless beaches in the Pacific or Caribbean ocean.</p>
