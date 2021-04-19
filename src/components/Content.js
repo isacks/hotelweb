@@ -22,6 +22,10 @@ import Beach from './Beach'
 import logo from '../assets/img/princesshotellogo.png'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailIcon from '@material-ui/icons/Mail';
+import temperature from '../assets/img/covid/termometro.png';
+import mask from '../assets/img/covid/mask.png';
+import antibacterial from '../assets/img/covid/desinfectante.png';
+import distance from '../assets/img/covid/distancia.png';
 
 function Content() {
     const tvChannels = [
@@ -200,14 +204,26 @@ function Content() {
                 </div>
             </Services>
             <HotelRules>
-                <Title className="display-4 text-center my-3">Preventive Rules for entering our facilities</Title>
+                <Title className="display-3 text-center my-5">Preventive Rules for entering our facilities</Title>
                 <div>
-                    <ol>
-                        <li>Face mask required.</li>
-                        <li>We will be checking that your body temperature is less than 38°.</li>
-                        <li>Use antibacterial gel for proper han desinfection.</li>
-                        <li>During your visit, please keep a minimium distance of 2 meters between other guest or employees.</li>
-                    </ol>
+                    <div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-4"><img src={mask} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-6 display-4">Face mask required.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-4"><img src={temperature} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-6 display-4">We will be checking that your body temperature is less than 38°.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-4"><img src={antibacterial} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-6 display-4">Use antibacterial gel for proper han desinfection.</div>
+                        </div>
+                        <div className="row d-flex align-items-center justify-content-center mb-5">
+                            <div className="col-sm-4"><img src={distance} className="figure-img img-fluid"></img></div>
+                            <div className="col-sm-6 display-4">During your visit, please keep a minimium distance of 2 meters between other guest or employees.</div>
+                        </div>
+                    </div>
                     <div className="h4">In case of Fire / Evacuation</div>
                     <ol>
                         <li>Please inform to the hotel operador the emergency situation as quickly as posible.</li>
