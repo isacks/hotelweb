@@ -240,11 +240,11 @@ function Content() {
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
                             <div className="col-sm-2"><img src={antibacterial} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">Use antibacterial gel for proper han desinfection.</div>
+                            <div className="col-sm-10 display-5">Use antibacterial gel for proper hand desinfection.</div>
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
                             <div className="col-sm-2"><img src={distance} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">During your visit, please keep a minimium distance of 2 meters between other guest or employees.</div>
+                            <div className="col-sm-10 display-5">During your visit, please keep a minimum distance of 2 meters between other guest or employees.</div>
                         </div>
                     </div>
                     <div className="display-3 my-5 text-warning fw-bolder">In case of Fire / Evacuation</div>
@@ -255,7 +255,7 @@ function Content() {
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
                             <div className="col-sm-2"><img src={exit} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the door of your room.</div>
+                            <div className="col-sm-10 display-4">Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the back of the entrance door in your room.</div>
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
                             <div className="col-sm-2"><img src={emergency} className="figure-img img-fluid"></img></div>
@@ -271,7 +271,7 @@ function Content() {
                         </div>
                         <div className="row d-flex align-items-center justify-content-center mb-5">
                             <div className="col-sm-2"><img src={back} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">Return to youn room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</div>
+                            <div className="col-sm-10 display-5">Return to your room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</div>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@ function Content() {
                 <div>
                     <div className="h4">Summit Municipal Park</div>
                     <img src={summit} className="img-fluid" />
-                    <p>Here you will see and learn about our National bird the Harpy Eagle. The perfect place to walk and enjoy nature and know about the different.</p>
+                    <p>Here you will see and learn about our National bird the Harpy Eagle. The perfect place to walk and enjoy nature.</p>
                 </div>
                 <div>
                     <div className="h4">Panama Rain Forest Discovery Center</div>
