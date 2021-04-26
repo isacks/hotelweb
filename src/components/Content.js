@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from './Header'
 import Restaurant from './Restaurant'
+import PreventiveRules from './PreventiveRules'
 import tinajas from '../assets/img/tinajas.jpg'
 import lafonda from '../assets/img/lafonda.jpg'
 import otto from '../assets/img/otto.jpg'
@@ -22,16 +23,6 @@ import Beach from './Beach'
 import logo from '../assets/img/princesshotellogo.png'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailIcon from '@material-ui/icons/Mail';
-import temperature from '../assets/img/covid/termometro.png';
-import mask from '../assets/img/covid/mask.png';
-import antibacterial from '../assets/img/covid/desinfectante.png';
-import distance from '../assets/img/covid/distancia.png';
-import alert from '../assets/img/emerg/advertencia.png';
-import exit from '../assets/img/emerg/exit.png';
-import emergency from '../assets/img/emerg/emergency.png';
-import scream from '../assets/img/emerg/scream.png';
-import elevator from '../assets/img/emerg/elevator.png';
-import back from '../assets/img/emerg/back.png';
 import PoolIcon from '@material-ui/icons/Pool';
 import LocalBarIcon from '@material-ui/icons/LocalBar';
 import WifiIcon from '@material-ui/icons/Wifi';
@@ -121,10 +112,10 @@ function Content() {
             img: taboga,
             name: 'Taboga',
             description: 'Also known as The Flowers Island, besides beaches it has walking trails up to the highest point of the island including Vigía Hill and Cross Hill.',
-            phone: '',
+            phone: '+507 6234-8989',
             social: '',
-            web: '',
-            email: '',
+            web: 'www.tabogaexpress.com',
+            email: 'info@tabogaexpress.com',
         },
         {
             img: islagrande,
@@ -228,53 +219,7 @@ function Content() {
             </Services>
             <HotelRules>
                 <Title className="display-3 text-center my-5 fw-bold">Preventive Rules for entering our facilities</Title>
-                <div>
-                    <div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={mask} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">Face mask required.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={temperature} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">We will be checking that your body temperature is less than 38°.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={antibacterial} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">Use antibacterial gel for proper hand desinfection.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={distance} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">During your visit, please keep a minimum distance of 2 meters between other guest or employees.</div>
-                        </div>
-                    </div>
-                    <div className="display-3 my-5 text-warning fw-bolder">In case of Fire / Evacuation</div>
-                    <div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={alert} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Please inform to the hotel operador the emergency situation as quickly as posible.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={exit} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Locate the nearest emergency exit and the evacuation route which are identify in the layout of the hotel that is attached to the back of the entrance door in your room.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={emergency} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Leave your room as indicated in the evacuation instructions.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={scream} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Keep calm, do not scream or run.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={elevator} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-4">Do not use the elevators.</div>
-                        </div>
-                        <div className="row d-flex align-items-center justify-content-center mb-5">
-                            <div className="col-sm-2"><img src={back} className="figure-img img-fluid"></img></div>
-                            <div className="col-sm-10 display-5">Return to your room if the area or the evacuation route is filled with smoke, place wet towels under the door and go to the window so you can be seen from outside.</div>
-                        </div>
-                    </div>
-                </div>
+                <PreventiveRules />
             </HotelRules>
             <Discover>
                 <Title className="display-2 text-center my-3">Discover Panama</Title>
