@@ -1,32 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
+import taboga from '../assets/img/taboga.jpg'
+import islagrande from '../assets/img/islagrande.jpg'
+import bocas from '../assets/img/bocas.jpg'
+import gunayala from '../assets/img/gunayala.jpg'
 
-function Beach(props) {
-    const beach = props.data;
+function Beach() {
+
+    const beaches = [
+        {
+            img: taboga,
+            name: 'Taboga',
+            description: 'Also known as The Flowers Island, besides beaches it has walking trails up to the highest point of the island including Vigía Hill and Cross Hill.',
+            phone: '+507 6234-8989',
+            social: '',
+            web: 'www.tabogaexpress.com',
+            email: 'info@tabogaexpress.com',
+        },
+        {
+            img: islagrande,
+            name: 'Isla Grande',
+            description: "Located in Colon City, it's a crystal water insland, perfect for diving.",
+            phone: '+507 6948-1990',
+            social: '@hotelsistermoon',
+            web: 'www.hotelsistermoon.com',
+            email: '',
+        },
+        {
+            img: bocas,
+            name: 'Bocas del Toro',
+            description: "Is an archipelago of islands, with turquoise color water also offers tropical forest and lagoons where you can see dolphins. Red Frog is one of their famous beaches.",
+            phone: '+507 836-5501',
+            social: '',
+            web: 'www.redfrogbeach.com.pa',
+            email: '',
+        },
+        {
+            img: gunayala,
+            name: 'Guna Yala',
+            description: "There're 365 islands, each for every day of the year! White sands, crystal clear water invites you to dive and snorkel.",
+            phone: '+507 203-7762',
+            social: '',
+            web: 'www.redfrogbeach.com.pa',
+            email: 'reservas@yandupisland.com',
+        },
+    ]
+
     return (
-        {/* <Container className="p-2">
-            <BeachName className="h4">{beach.name}</BeachName>
-            <BeachImg>
-                <img src={beach.img} className="img-fluid" />
-            </BeachImg>
-            <BeachDescription>
-                {beach.description}
-            </BeachDescription>
-            <BeachPhone>{beach.phone}</BeachPhone>
-            <BeachSocial>{beach.social}</BeachSocial>
-            <BeachWeb>{beach.web}</BeachWeb>
-            <BeachEmail>{beach.email}</BeachEmail>
-        </Container> */},
-        <Container className="card mb-3 text-start">
-            <img src={beach.img} class="card-img-top" alt="..."/>
-            <div class="card-body">
-                <h5 class="card-title fs-1">{beach.name}</h5>
-                <p class="card-text">{beach.description}</p>
-                <p class="card-text">{beach.phone}</p>
-                <p class="card-text">{beach.social}</p>
-                <p class="card-text">{beach.web}</p>
-                <p class="card-text">{beach.email}</p>
-            </div>
+        <Container>
+            <Title className="display-2 text-center">
+                Did somebody said sun, beach and sand?
+            </Title>
+            <p>Bathed for 2 oceans, Panamá offers countless beaches in the Pacific or Caribbean ocean.</p>
+            {
+                beaches.map(beach => (
+                    <div className="card mb-3 text-start">
+                        <img src={beach.img} class="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title fs-1">{beach.name}</h5>
+                            <p className="card-text">{beach.description}</p>
+                            <p className="card-text"><small className="text-muted">{beach.phone}</small></p>
+                            <p className="card-text"><small className="text-muted">{beach.social}</small></p>
+                            <p className="card-text"><small className="text-muted">{beach.web}</small></p>
+                            <p className="card-text"><small className="text-muted">{beach.email}</small></p>
+                        </div>
+                    </div>
+                ))
+            }
         </Container>
     )
 }
@@ -34,10 +74,8 @@ function Beach(props) {
 export default Beach
 
 const Container = styled.div``;
-const BeachName = styled.div``;
-const BeachImg = styled.div``;
-const BeachDescription = styled.div``;
-const BeachPhone = styled.div``;
-const BeachSocial = styled.div``;
-const BeachWeb = styled.div``;
-const BeachEmail = styled.div``;
+
+const Title = styled.div`
+    color: #cd8825;
+    margin: 50px 0;
+`;

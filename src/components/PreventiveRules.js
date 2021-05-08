@@ -59,38 +59,38 @@ function PreventiveRules() {
         },
     ]
 
-
     return (
         <Container>
-                <div className="">
-                    {
-                        covidRules.map(rule => (
-                            <div className="row mb-3 p-3">
-                                <RuleImg className="col-md-4">
-                                    <img src={rule.icon} />
-                                </RuleImg>
-                                <RuleInfo className="col-md-8">
-                                    <p>{rule.description}</p>
-                                </RuleInfo>
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="display-3 my-5 text-warning fw-bolder">In case of Fire / Evacuation</div>
-                <div className="">
-                    {
-                        evacuationRules.map(rule => (
-                            <div className="row mb-3 p-3">
-                                <RuleImg className="col-md-4 p-2">
-                                    <img src={rule.icon} />
-                                </RuleImg>
-                                <RuleInfo className="col-md-8 p-2">
-                                    <p>{rule.description}</p>
-                                </RuleInfo>
-                            </div>
-                        ))
-                    }
-                </div>
+            <Title className="display-3 text-center">Preventive Rules for entering our facilities</Title>
+            <div>
+                {
+                    covidRules.map(rule => (
+                        <div className="row mb-3 p-3">
+                            <RuleImg className="col-md-4">
+                                <img src={rule.icon} alt="..." />
+                            </RuleImg>
+                            <RuleInfo className="col-md-8">
+                                <p>{rule.description}</p>
+                            </RuleInfo>
+                        </div>
+                    ))
+                }
+            </div>
+            <Title className="display-3 my-5">In case of Fire / Evacuation</Title>
+            <div>
+                {
+                    evacuationRules.map(rule => (
+                        <div className="row mb-3 p-3">
+                            <RuleImg className="col-md-4 p-2">
+                                <img src={rule.icon} alt="..." />
+                            </RuleImg>
+                            <RuleInfo className="col-md-8 p-2">
+                                <p>{rule.description}</p>
+                            </RuleInfo>
+                        </div>
+                    ))
+                }
+            </div>
         </Container>
     )
 }
@@ -98,7 +98,11 @@ function PreventiveRules() {
 export default PreventiveRules
 
 const Container = styled.div`
+`;
 
+const Title = styled.div`
+    color: #cd8825;
+    margin: 50px 0;
 `;
 
 const RuleImg = styled.div`

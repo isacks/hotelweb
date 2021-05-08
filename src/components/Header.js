@@ -6,7 +6,7 @@ function Header() {
     return (
         <Container className="d-flex flex-column justify-content-center align-items-center vh-100">
             <div className="col-sm-6">
-                <img src={logo} alt="" className="mt-3 figure-img img-fluid"/>
+                <img src={logo} alt="logo" className="mt-3 figure-img img-fluid"/>
             </div>
             <Title className="display-3 text-center">Princess Hotel Directory</Title>
         </Container>

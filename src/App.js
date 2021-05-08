@@ -13,7 +13,7 @@ function App() {
           <Route path="/">
             <div className="container d-flex align-items-center flex-column">
               <Logo className="mt-5">
-                <img src={logo} />
+                <img src={logo} alt="..."/>
               </Logo>
               <UnderConstrucction className="display-2 mt-5">
                 Coming Soon.
