@@ -39,11 +39,12 @@ function DiscoverPanama() {
     return (
         <Container>
             <Title className="display-2 text-center">Discover Panama</Title>
+            <p> We like you to take advantage of your visit and discover the beauty of Panamá. These are our suggestions:</p>
             {
-                discoverLocations.map((location) => (
-                    <div className="card mb-3 text-start">
+                discoverLocations.map((location, key) => (
+                    <div className="card mb-3 text-start shadow-sm overflow-hidden border-0" key={key}>
                         <div className="row g-0">
-                            <div className="col-md-4">
+                            <div className="col-md-4 shadow">
                                 <img src={location.img} alt={location.title} className="img-fluid" />
                             </div>
                             <div className="col-md-8">

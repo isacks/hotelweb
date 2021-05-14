@@ -21,7 +21,7 @@ function Services() {
                 <div className="h2">Always connected</div>
                 <p>Free wifi at the hotel.</p>
                 <p>Wireless Name: Princess Hotel</p>
-                <p>Password: PrincessHotelpm@</p>
+                <p>Password: request it at the Front Desk</p>
             </div>
             <div>
                 <LocalBarIcon style={{ fontSize: 80, color: "#cd8825" }} />

@@ -10,7 +10,7 @@ function Beach() {
     const beaches = [
         {
             img: taboga,
-            name: 'Taboga',
+            title: 'Taboga',
             description: 'Also known as The Flowers Island, besides beaches it has walking trails up to the highest point of the island including Vigía Hill and Cross Hill.',
             phone: '+507 6234-8989',
             social: '',
@@ -19,7 +19,7 @@ function Beach() {
         },
         {
             img: islagrande,
-            name: 'Isla Grande',
+            title: 'Isla Grande',
             description: "Located in Colon City, it's a crystal water insland, perfect for diving.",
             phone: '+507 6948-1990',
             social: '@hotelsistermoon',
@@ -28,7 +28,7 @@ function Beach() {
         },
         {
             img: bocas,
-            name: 'Bocas del Toro',
+            title: 'Bocas del Toro',
             description: "Is an archipelago of islands, with turquoise color water also offers tropical forest and lagoons where you can see dolphins. Red Frog is one of their famous beaches.",
             phone: '+507 836-5501',
             social: '',
@@ -37,7 +37,7 @@ function Beach() {
         },
         {
             img: gunayala,
-            name: 'Guna Yala',
+            title: 'Guna Yala',
             description: "There're 365 islands, each for every day of the year! White sands, crystal clear water invites you to dive and snorkel.",
             phone: '+507 203-7762',
             social: '',
@@ -53,16 +53,22 @@ function Beach() {
             </Title>
             <p>Bathed for 2 oceans, Panamá offers countless beaches in the Pacific or Caribbean ocean.</p>
             {
-                beaches.map(beach => (
-                    <div className="card mb-3 text-start">
-                        <img src={beach.img} class="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title fs-1">{beach.name}</h5>
-                            <p className="card-text">{beach.description}</p>
-                            <p className="card-text"><small className="text-muted">{beach.phone}</small></p>
-                            <p className="card-text"><small className="text-muted">{beach.social}</small></p>
-                            <p className="card-text"><small className="text-muted">{beach.web}</small></p>
-                            <p className="card-text"><small className="text-muted">{beach.email}</small></p>
+                beaches.map((beach, key) => (
+                    <div className="card mb-3 text-start shadow-sm overflow-hidden border-0" key={key}>
+                        <div className="row g-0">
+                            <div className="col-md-4">
+                                <img src={beach.img} alt={beach.title} className="img-fluid" />
+                            </div>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h5 className="card-title">{beach.title}</h5>
+                                    <p className="card-text">{beach.description}</p>
+                                    <p className="card-text"><small className="text-muted">{beach.phone}</small></p>
+                                    <p className="card-text"><small className="text-muted">{beach.social}</small></p>
+                                    <p className="card-text"><small className="text-muted">{beach.web}</small></p>
+                                    <p className="card-text"><small className="text-muted">{beach.email}</small></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))

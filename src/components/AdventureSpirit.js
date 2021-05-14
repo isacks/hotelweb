@@ -61,8 +61,8 @@ function AdventureSpirit() {
             <Title className="display-2 text-center">Adventure Spirit?</Title>
             <p>Get to know the flora and fauna of our country, visiting these places:</p>
             {
-                adventureLocations.map((location) => (
-                    <div className="card mb-3 text-start">
+                adventureLocations.map((location, key) => (
+                    <div className="card mb-3 text-start shadow-sm overflow-hidden border-0" key={key}>
                         <div className="row g-0">
                             <div className="col-md-4">
                                 <img src={location.img} alt={location.title} className="img-fluid" />

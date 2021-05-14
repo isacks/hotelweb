@@ -62,10 +62,10 @@ function PreventiveRules() {
     return (
         <Container>
             <Title className="display-3 text-center">Preventive Rules for entering our facilities</Title>
-            <div>
+            <div className="col-8">
                 {
-                    covidRules.map(rule => (
-                        <div className="row mb-3 p-3">
+                    covidRules.map((rule, key) => (
+                        <div className="row mb-3 p-3" key={key}>
                             <RuleImg className="col-md-4">
                                 <img src={rule.icon} alt="..." />
                             </RuleImg>
@@ -77,10 +77,10 @@ function PreventiveRules() {
                 }
             </div>
             <Title className="display-3 my-5">In case of Fire / Evacuation</Title>
-            <div>
+            <div className="col-8">
                 {
-                    evacuationRules.map(rule => (
-                        <div className="row mb-3 p-3">
+                    evacuationRules.map((rule, key) => (
+                        <div className="row mb-3 p-3" key={key}>
                             <RuleImg className="col-md-4 p-2">
                                 <img src={rule.icon} alt="..." />
                             </RuleImg>
@@ -98,6 +98,9 @@ function PreventiveRules() {
 export default PreventiveRules
 
 const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const Title = styled.div`
@@ -107,7 +110,7 @@ const Title = styled.div`
 
 const RuleImg = styled.div`
     img{
-        width: 200px;
+        width: 150px;
     }
     margin-bottom: 15px;
     display: flex;
