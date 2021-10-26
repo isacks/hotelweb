@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from './assets/img/princesshotel.png'
 import Content from './components/Content'
+import HomeComponent from './components/HomeComponent';
 
 function App() {
   return (
@@ -11,14 +11,7 @@ function App() {
             <Content />
           </Route>
           <Route path="/">
-            <div className="container d-flex align-items-center flex-column">
-              <Logo className="mt-5">
-                <img src={logo} alt="..."/>
-              </Logo>
-              <UnderConstrucction className="display-2 mt-5">
-                Coming Soon.
-              </UnderConstrucction>
-            </div>
+            <HomeComponent />
           </Route>
         </Switch>
       </Router>
