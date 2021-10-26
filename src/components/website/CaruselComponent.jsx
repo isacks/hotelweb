@@ -23,7 +23,7 @@ function CaruselComponent() {
                 <div className="carousel-item">
                     <img src={lobby} className="d-block w-100" alt="..." />
                     <InfoCard className="carousel-caption d-none d-md-block">
-                        <h5>Ambiente agradable y musica relajante</h5>
+                        <h5>Ambiente agradable y música relajante</h5>
                         <p>Dale rienda suelta a tu imaginación y se más productivo.</p>
                     </InfoCard>
                 </div>

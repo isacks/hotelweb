@@ -11,7 +11,7 @@ import meeting from '../../assets/website/img/meeting.jpg';
 function FotosComponent() {
     return (
         <div>
-            <div className="display-6 my-5">Fotos del Hotel</div>
+            <div className="display-6 my-3 mt-5">Fotos del Hotel</div>
             <div className="row">
                 <div className="col-md-3 mb-3">
                     <img src={lobby} class="img-thumbnail" alt="..." />

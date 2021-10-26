@@ -67,4 +67,4 @@ function FooterComponent() {
     )
 }
 
-export default FooterComponent
+export default FooterComponent;
