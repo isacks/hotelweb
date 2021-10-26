@@ -1,7 +1,6 @@
 import React from 'react';
 import vacuntur from '../../assets/website/img/vacuntur.jpg';
-import turismpanamalogo from '../../assets/website/img/logo-base-white.svg';
-function VacunturComponent() {
+function VacuturComponent() {
     return (
         <div className="card text-white mt-5">
             <img src={vacuntur} className="card-img" alt="..." />
@@ -14,4 +13,4 @@ function VacunturComponent() {
     )
 }
 
-export default VacunturComponent;
+export default VacuturComponent

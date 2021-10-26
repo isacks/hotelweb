@@ -30,7 +30,7 @@ function NavbarComponent() {
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vacutur  <HealthAndSafetyIcon /></a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="https://www.tourismpanama.com/vaccine/">Programa Vacuntur</a></li>
+                  <li><a className="dropdown-item" href="https://www.tourismpanama.com/vaccine/">Programa Vacutur</a></li>
                   <li><a className="dropdown-item" href="https://api.whatsapp.com/send?phone=50769756086&text=%C2%A1Hola%2C%20Princess%20Hotel%20Panam%C3%A1!%20Estoy%20interesado%20en%20hacer%20una%20reserva%20para%20el%20programa%20Vacuntur.">Reservar</a></li>
                 </ul>
               </li>

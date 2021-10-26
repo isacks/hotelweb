@@ -4,13 +4,13 @@ import CaruselComponent from './website/CaruselComponent';
 import RoomsComponent from './website/RoomsComponent';
 import FotosComponent from './website/FotosComponent';
 import FooterComponent from './website/FooterComponent';
-import VacunturComponent from './website/VacunturComponent';
+import VacuturComponent from './website/VacuturComponent';
 function HomeComponent() {
     return (
         <div className="container">
             <NavbarComponent />
             <CaruselComponent />
-            <VacunturComponent />
+            <VacuturComponent />
             <RoomsComponent />
             <FotosComponent />
             <FooterComponent />
