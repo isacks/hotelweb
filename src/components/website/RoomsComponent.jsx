@@ -6,8 +6,8 @@ import jsuite from '../../assets/website/img/jsuite.jpg';
 function RoomsComponent() {
     return (
         <div>
-            <div className="display-6 my-5">Habitaciones</div>
-            <div className="row mt-5 d-flex justify-content-around">
+            <div className="display-6 mt-5">Habitaciones</div>
+            <div className="row mt-3 d-flex justify-content-around">
                 <div className="card border-light col-md-3 shadow-sm">
                     <img src={doble1} className="card-img-top img-fluid mt-3" alt="..." />
                     <div className="card-body">
