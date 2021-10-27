@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import asocial from '../../assets/website/img/asocial.jpg';
 import lobby from '../../assets/website/img/lobby.jpg';
 import food from '../../assets/website/img/food.jpg';
-
+import cultura from '../../assets/website/img/cultura.jpg';
 function CaruselComponent() {
     return (
         <div id="carouselExampleCaptions" className="carousel slide container" data-bs-ride="carousel">
@@ -11,6 +11,7 @@ function CaruselComponent() {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -32,6 +33,13 @@ function CaruselComponent() {
                     <InfoCard className="carousel-caption d-none d-md-block">
                         <h5>Consiente tu paladar</h5>
                         <p>Disfruta de nuestro menu especial que incluye sabores nacionales e internacionales.</p>
+                    </InfoCard>
+                </div>
+                <div className="carousel-item">
+                    <img src={cultura} className="d-block w-100" alt="..." />
+                    <InfoCard className="carousel-caption d-none d-md-block">
+                        <h5>Conoce la cultura panameña</h5>
+                        <p>Realizamos presentaciones de grupos de baile para el deleite de nuestros huéspedes.</p>
                     </InfoCard>
                 </div>
             </div>

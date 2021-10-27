@@ -8,8 +8,8 @@ function FooterComponent() {
         <div>
             <footer className="py-5">
                 <div className="row">
-                    <div className="col-2">
-                        <h5>Princess Hotel</h5>
+                    <div className="col-4">
+                        <h5>Links</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-muted">Inicio</a></li>
                             <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-muted">Información</a></li>
@@ -19,7 +19,7 @@ function FooterComponent() {
                         </ul>
                     </div>
 
-                    <div className="col-2">
+                    <div className="col-4">
                         <h5>Servicios</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><a href="/" className="nav-link p-0 text-muted">Reservas</a></li>
@@ -41,7 +41,7 @@ function FooterComponent() {
                         </ul>
                     </div> */}
 
-                    <div className="col-4 offset-1">
+                    <div className="col-sm-4">
                         <form>
                             <h5>Subscríbete a nuestro boletín informativo</h5>
                             <p>Recibe todas nuestras ofertas en tu correo.</p>
